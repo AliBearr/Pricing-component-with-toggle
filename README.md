@@ -1,7 +1,7 @@
 # Frontend Mentor - Pricing component with toggle
 
-![github repo size](https://img.shields.io/github/repo-size/AliBearr/intro-component-sign-up-form)
-![github contributors](https://img.shields.io/github/contributors/AliBearr/intro-component-sign-up-form)
+![github repo size](https://img.shields.io/github/repo-size/AliBearr/Pricing-component-with-toggle)
+![github contributors](https://img.shields.io/github/contributors/AliBearr/Pricing-component-with-toggle)
 ![github twiter](https://img.shields.io/twitter/follow/Alibearrr?style=social)
 
 <!-- ![podcast preview](./design/desktop-preview.jpg) -->
