@@ -1,0 +1,122 @@
+// pricing Cards
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2rem;
+  width: clamp(327px, 23vw, 350px);
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+    @include for-tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &--white {
+    background: $clr-white;
+    color: $clr-grey-3;
+    box-shadow: 0px 20px 40px 0px hsla(243, 61%, 89%, 0.5);
+    height: 453px;
+    @include for-tablet {
+      align-self: center;
+    }
+
+    .pricing-card__price {
+      color: $clr-grey-4;
+    }
+
+    .pricing-card__feature {
+      &:first-child {
+        border-top: 1px solid $clr-border;
+      }
+      border-bottom: 1px solid $clr-border;
+    }
+  }
+
+  &--blue {
+    background: linear-gradient(
+      to right,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    );
+    color: $clr-white;
+    box-shadow: 0px 20px 40px 0px hsla(243, 61%, 89%, 0.5);
+    @include for-tablet {
+      justify-content: space-evenly;
+    }
+    .pricing-card__feature {
+      &:first-child {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.25);
+      }
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+    }
+  }
+
+  &--middle {
+    @include for-tablet {
+      height: 31.31rem;
+    }
+  }
+
+  &__head {
+    align-self: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+  }
+
+  &__price {
+    font-size: 4.6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__features {
+    list-style: none;
+    text-align: center;
+  }
+
+  &__feature {
+    padding: 0.75rem 0;
+  }
+}
+
+// ======
+// | Buttons |
+// ======
+.btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  padding: 0.88rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.39px;
+  margin-top: 2rem;
+  transition: all 0.5s;
+  &--white {
+    background: linear-gradient(
+      to right,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    );
+    color: #fff;
+    &:hover {
+      color: hsl(237, 63%, 64%);
+      background: transparent;
+      border: 1px solid hsl(237, 63%, 64%);
+    }
+  }
+
+  &--blue {
+    background: $clr-white;
+    color: hsl(237, 63%, 64%);
+    &:hover {
+      color: $clr-white;
+      background: transparent;
+      border: 1px solid $clr-white;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+//Footer
+.my-link {
+  font-weight: 400;
+  padding: 1rem 0;
+  text-align: center;
+  a {
+    &:hover {
+      color: $clr-grey-4;
+      box-shadow: 2px 4px 9px 3px;
+    }
+  }
+}
+//Footer Buttons

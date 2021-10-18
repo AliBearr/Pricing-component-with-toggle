@@ -1,0 +1,10 @@
+// Pricing Cards Warpper
+.pricing-card-warpper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  @include for-tablet {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,12 @@
+// Header
+.header {
+  text-align: center;
+  color: $clr-grey-3;
+  padding-top: clamp(4rem, 4vw, 4.43rem);
+}
+
+.toggle-switch-warpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

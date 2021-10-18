@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  background: $clr-grey-1 no-repeat;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  inset: 0;
+  z-index: -1;
+}
+
+.warpper {
+  max-width: 327px;
+  @include for-tablet {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
